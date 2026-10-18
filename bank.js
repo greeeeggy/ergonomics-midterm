@@ -84,11 +84,7 @@ export const questions = [
     "prompt": "Name the discipline whose Greek roots mean work and laws.",
     "answer": "Ergonomics",
     "explanation": "The term combines ergo, meaning work, and nomos, meaning laws.",
-    "aliases": [
-      "human factors",
-      "human factors and ergonomics",
-      "HFE"
-    ]
+    "aliases": []
   },
   {
     "id": "foundations-003",
@@ -1341,9 +1337,7 @@ export const questions = [
     "prompt": "What does NIOSH stand for?",
     "answer": "National Institute for Occupational Safety and Health",
     "explanation": "NIOSH is the institute named in the lifting-equation material.",
-    "aliases": [
-      "National Institute of Occupational Safety and Health"
-    ]
+    "aliases": []
   },
   {
     "id": "analysis-004",
