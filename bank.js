@@ -65,7 +65,7 @@ export const questions = [
     "topic": "foundations",
     "source": "book",
     "pages": "3",
-    "prompt": "What is the main purpose of human factors and ergonomics in Helander’s opening chapter?",
+    "prompt": "What is the main purpose of human factors and ergonomics?",
     "answer": "Design systems for human use",
     "explanation": "HFE applies knowledge about people to the design and improvement of systems.",
     "choices": [
@@ -136,7 +136,7 @@ export const questions = [
     "pages": "4",
     "prompt": "A designer is investigating wrist posture during keyboard use. Which knowledge area is the most direct fit?",
     "answer": "Biomechanics",
-    "explanation": "The chapter links posture and keying with biomechanics.",
+    "explanation": "Biomechanics examines the forces and movements involved in posture and keying.",
     "choices": [
       "Colorimetry alone",
       "Market segmentation",
@@ -173,9 +173,9 @@ export const questions = [
     "topic": "foundations",
     "source": "book",
     "pages": "8",
-    "prompt": "After repeated operator errors, which response best follows the chapter’s design approach?",
+    "prompt": "After repeated operator errors, which response best follows an ergonomic design approach?",
     "answer": "Investigate the design and reduce opportunities for error",
-    "explanation": "The chapter shifts attention from blaming an enduring personality trait to improving the system.",
+    "explanation": "Investigating the system can reveal design problems that encourage errors, rather than assuming the operator has an enduring accident-prone personality.",
     "choices": [
       "Investigate the design and reduce opportunities for error",
       "Remove all feedback",
@@ -262,7 +262,7 @@ export const questions = [
     "topic": "foundations",
     "source": "book",
     "pages": "12",
-    "prompt": "Under high stress, an operator attends to an unusually narrow set of cues. What does the chapter call this?",
+    "prompt": "Under high stress, an operator attends to an unusually narrow set of cues. What is this called?",
     "answer": "Tunnel vision",
     "explanation": "Stress can narrow attention and make relevant information easier to miss.",
     "choices": [
@@ -293,7 +293,7 @@ export const questions = [
     "topic": "foundations",
     "source": "book",
     "pages": "13",
-    "prompt": "In Helander’s systems model, a display must always be an electronic screen.",
+    "prompt": "In a human–machine system, a display must always be an electronic screen.",
     "answer": "False",
     "explanation": "A display is any presentation of system information, including sounds and visible physical changes."
   },
@@ -303,7 +303,7 @@ export const questions = [
     "topic": "foundations",
     "source": "book",
     "pages": "13–14",
-    "prompt": "Which set contains the three central system goals discussed in the chapter?",
+    "prompt": "Which set contains three central goals of ergonomic system design?",
     "answer": "Safety, productivity, and operator satisfaction",
     "explanation": "These goals guide the design and assessment of the system.",
     "choices": [
@@ -408,7 +408,7 @@ export const questions = [
     "topic": "vision",
     "source": "book",
     "pages": "41",
-    "prompt": "Which structure provides most of the eye’s refractive power in the chapter’s description?",
+    "prompt": "Which structure provides most of the eye’s refractive power?",
     "answer": "Cornea",
     "explanation": "The cornea provides most refraction; the lens adjusts focus more finely.",
     "choices": [
@@ -526,7 +526,7 @@ export const questions = [
     "topic": "vision",
     "source": "book",
     "pages": "46",
-    "prompt": "What approximate time does the chapter give for completing dark adaptation?",
+    "prompt": "Approximately how long does complete dark adaptation take?",
     "answer": "30–40 minutes",
     "explanation": "The rod phase continues after the initial faster cone phase.",
     "choices": [
@@ -560,7 +560,7 @@ export const questions = [
     "pages": "48",
     "prompt": "What familiar letter chart is used to measure visual acuity?",
     "answer": "Snellen chart",
-    "explanation": "The chapter discusses its widespread use and the limitations of letter-based testing.",
+    "explanation": "Snellen charts are widely used, but letter recognition and differences between letter shapes can affect test results.",
     "aliases": [
       "Snellen",
       "Snellen eye chart"
@@ -598,9 +598,9 @@ export const questions = [
     "topic": "vision",
     "source": "book",
     "pages": "50",
-    "prompt": "Approximately what visual angle does the chapter recommend for ordinary text height?",
+    "prompt": "Approximately what visual angle is recommended for ordinary text height?",
     "answer": "20 arc minutes",
-    "explanation": "The chapter’s text-size discussion uses about one third of a degree.",
+    "explanation": "Twenty arc minutes is about one third of a degree.",
     "choices": [
       "One arc second",
       "20 arc minutes",
@@ -740,7 +740,7 @@ export const questions = [
     "pages": "56–59",
     "prompt": "Which design consideration is especially relevant for an aging eye?",
     "answer": "Limit glare and account for reduced focusing ability",
-    "explanation": "The chapter emphasizes reduced accommodation and increased interference from stray light.",
+    "explanation": "Reduced accommodation and increased interference from stray light make focusing distance and glare control important.",
     "choices": [
       "Assume all viewing distances are equally clear",
       "Remove all local task lights",
@@ -754,7 +754,7 @@ export const questions = [
     "topic": "vision",
     "source": "book",
     "pages": "57",
-    "prompt": "Using the chapter’s f = 1/D relation, what distance corresponds to 2 diopters?",
+    "prompt": "Using f = 1/D, what focusing distance corresponds to 2 diopters?",
     "answer": "0.50 m",
     "explanation": "1 ÷ 2 = 0.50 m. The relation uses distance in metres.",
     "choices": [
@@ -839,7 +839,7 @@ export const questions = [
     "pages": "63",
     "prompt": "A highly energy-efficient lamp necessarily provides excellent color rendering.",
     "answer": "False",
-    "explanation": "The chapter describes a trade-off between light output per watt and faithful color appearance."
+    "explanation": "High light output per watt does not guarantee that object colors will appear faithfully."
   },
   {
     "id": "vision-034",
@@ -899,7 +899,7 @@ export const questions = [
     "pages": "149",
     "prompt": "For a normally distributed body dimension, which expression approximates the 95th percentile?",
     "answer": "Mean + 1.65 × standard deviation",
-    "explanation": "The chapter uses 1.65 standard deviations above the mean for the upper 95th percentile.",
+    "explanation": "For a normal distribution, approximately 1.65 standard deviations above the mean gives the 95th percentile.",
     "choices": [
       "Mean + 95 × standard deviation",
       "Mean + 1.65 × standard deviation",
@@ -913,7 +913,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "149",
-    "prompt": "A normally distributed dimension has mean 170 cm and SD 10 cm. Using Helander’s approximation, what is its 5th percentile?",
+    "prompt": "A normally distributed dimension has mean 170 cm and SD 10 cm. Using mean − 1.65 × SD, what is its 5th percentile?",
     "answer": "153.5 cm",
     "explanation": "170 − 1.65 × 10 = 153.5 cm. These are practice inputs, not population measurements.",
     "choices": [
@@ -992,7 +992,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "152",
-    "prompt": "Why does the chapter add a shoe allowance to barefoot vertical measurements?",
+    "prompt": "Why is a shoe allowance added to barefoot vertical measurements when designing a workstation?",
     "answer": "Shoes increase the relevant floor-to-body heights",
     "explanation": "Anthropometric tables may use bare feet, while actual users usually wear footwear.",
     "choices": [
@@ -1112,7 +1112,7 @@ export const questions = [
     "pages": "156",
     "prompt": "Forward functional reach assumes that the user is not bending forward at the waist or hips.",
     "answer": "True",
-    "explanation": "The chapter separates ordinary reach from extra reach gained by bending."
+    "explanation": "Ordinary functional reach is distinguished from the extra reach gained by bending."
   },
   {
     "id": "anthropometry-018",
@@ -1122,7 +1122,7 @@ export const questions = [
     "pages": "156",
     "prompt": "Why should the extra reach gained by bending not define the location of continuously used tools?",
     "answer": "Sustained bending is unsuitable for prolonged work",
-    "explanation": "The chapter reserves those extra reach allowances for occasional, short tasks.",
+    "explanation": "Extra reach obtained by bending is suitable only for occasional, short tasks rather than prolonged use.",
     "choices": [
       "All users gain the same reach without effort",
       "Sustained bending is unsuitable for prolonged work",
@@ -1136,7 +1136,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "156",
-    "prompt": "What reference point does the chapter recommend starting from when laying out a manual assembly workstation?",
+    "prompt": "What reference point is useful when starting the layout of a manual assembly workstation?",
     "answer": "Hand reference point",
     "explanation": "The task determines a suitable hand position, and the rest of the workstation can be laid out around it.",
     "aliases": [
@@ -1150,7 +1150,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "156",
-    "prompt": "For heavy manual work, where does the chapter place the preferred hand level relative to the elbow?",
+    "prompt": "For heavy manual work, where should the hands preferably be positioned relative to the elbow?",
     "answer": "About 20 cm below elbow height",
     "explanation": "A lower hand position can suit forceful manual tasks; precision work has different requirements.",
     "choices": [
@@ -1166,7 +1166,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "156",
-    "prompt": "For precision work with supported forearms, where does the chapter place the hands?",
+    "prompt": "For precision work with supported forearms, where should the hands preferably be positioned relative to the elbow?",
     "answer": "About 5 cm above elbow height",
     "explanation": "The recommended reference position depends on the task and support conditions.",
     "choices": [
@@ -1192,7 +1192,7 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "158",
-    "prompt": "What is the first step in the chapter’s anthropometric design procedure?",
+    "prompt": "What is the first step in an anthropometric design procedure?",
     "answer": "Characterize the intended user population",
     "explanation": "The designer first checks who the users are and whether suitable measurements exist.",
     "choices": [
@@ -1271,9 +1271,9 @@ export const questions = [
     "topic": "anthropometry",
     "source": "book",
     "pages": "164",
-    "prompt": "In the historical accessibility guidance reproduced in Table 8.4, what maximum ramp slope is listed for new buildings?",
+    "prompt": "In historical accessibility guidance for new buildings, what maximum ramp slope is recommended?",
     "answer": "1:12",
-    "explanation": "The table states 1:12. This item tests the assigned book, not present-day legal compliance.",
+    "explanation": "A 1:12 slope means one unit of vertical rise for every twelve units of horizontal run. This is a historical recommendation, not a statement of current legal requirements.",
     "choices": [
       "1:1",
       "1:12",
@@ -1305,7 +1305,7 @@ export const questions = [
     "pages": "3",
     "prompt": "Which activity is included in manual material handling?",
     "answer": "Pushing a loaded cart",
-    "explanation": "The course PDF includes lifting, lowering, carrying, holding, pulling, and pushing.",
+    "explanation": "Manual material handling includes lifting, lowering, carrying, holding, pulling, and pushing.",
     "choices": [
       "Pushing a loaded cart",
       "Watching a process remotely",
@@ -1321,7 +1321,7 @@ export const questions = [
     "pages": "9",
     "prompt": "What is lifting called when the load is held outside the body’s mid-sagittal line?",
     "answer": "Asymmetric lifting",
-    "explanation": "The slide identifies lifting away from the body’s midline as asymmetric.",
+    "explanation": "Lifting away from the body’s midline creates an asymmetric lifting condition.",
     "aliases": [
       "asymmetrical lifting",
       "asymmetric lift",
@@ -1336,7 +1336,7 @@ export const questions = [
     "pages": "10",
     "prompt": "What does NIOSH stand for?",
     "answer": "National Institute for Occupational Safety and Health",
-    "explanation": "NIOSH is the institute named in the lifting-equation material.",
+    "explanation": "NIOSH is the National Institute for Occupational Safety and Health.",
     "aliases": []
   },
   {
@@ -1345,7 +1345,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "11",
-    "prompt": "Which expression gives the lifting index in the supplied course material?",
+    "prompt": "Which expression gives the NIOSH lifting index?",
     "answer": "Load weight ÷ recommended weight limit",
     "explanation": "LI compares the actual load with the RWL for the task conditions.",
     "choices": [
@@ -1374,9 +1374,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "12",
-    "prompt": "What load constant is used in the metric revised lifting equation shown?",
+    "prompt": "What load constant is used in the metric revised NIOSH lifting equation?",
     "answer": "23 kg",
-    "explanation": "The slide lists LC = 23 kg, before the task multipliers are applied.",
+    "explanation": "LC = 23 kg before the task multipliers are applied.",
     "choices": [
       "23 N",
       "23 kg",
@@ -1512,9 +1512,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "13",
-    "prompt": "The supplied slides list one-handed lifting as a condition outside the equation’s stated application.",
+    "prompt": "One-handed lifting falls outside the application conditions of the revised NIOSH lifting equation.",
     "answer": "True",
-    "explanation": "The exclusions slide specifically lists lifting or lowering with one hand."
+    "explanation": "The revised lifting equation applies to two-handed tasks; one-handed lifting falls outside its application conditions."
   },
   {
     "id": "analysis-016",
@@ -1522,9 +1522,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "13",
-    "prompt": "The revised lifting equation shown is presented as suitable for lifting while seated or kneeling.",
+    "prompt": "The revised NIOSH lifting equation is suitable for lifting while seated or kneeling.",
     "answer": "False",
-    "explanation": "Seated and kneeling lifts appear in the slide’s exclusion list."
+    "explanation": "Seated and kneeling lifts fall outside the equation’s application conditions."
   },
   {
     "id": "analysis-017",
@@ -1532,9 +1532,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "13",
-    "prompt": "An unstable object is one of the lifting conditions excluded by the supplied slide.",
+    "prompt": "Lifting an unstable object falls outside the application conditions of the revised NIOSH lifting equation.",
     "answer": "True",
-    "explanation": "Unstable objects do not meet the assumptions listed for applying this method."
+    "explanation": "An unstable object does not meet the assumptions for applying this lifting method."
   },
   {
     "id": "analysis-018",
@@ -1558,7 +1558,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "17",
-    "prompt": "The lecture presents a lifting index of 1 or less as the preferred target.",
+    "prompt": "A NIOSH lifting index of 1 or less is the preferred assessment target.",
     "answer": "True",
     "explanation": "The target is a task-assessment criterion; it does not guarantee that every individual is protected."
   },
@@ -1584,7 +1584,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "18",
-    "prompt": "Which step comes first in the supplied single-task assessment procedure?",
+    "prompt": "Which step comes first when assessing a single lifting task with the revised NIOSH lifting equation?",
     "answer": "Measure and record the task variables",
     "explanation": "The observed task measurements are needed before selecting multipliers and calculating RWL.",
     "choices": [
@@ -1614,7 +1614,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "20",
-    "prompt": "How is the frequency-independent RWL computed in the slides?",
+    "prompt": "How is the frequency-independent recommended weight limit computed?",
     "answer": "Set the frequency multiplier to 1.0",
     "explanation": "FIRWL retains the other task factors while separating out frequency.",
     "choices": [
@@ -1630,9 +1630,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "19",
-    "prompt": "Which task does the multi-task procedure say to prioritize when starting redesign?",
+    "prompt": "Which task should be prioritized when starting to redesign a job with multiple lifting tasks?",
     "answer": "The task with the highest single-task lifting index",
-    "explanation": "The slides begin analysis with the highest STLI, rather than averaging away the demanding task.",
+    "explanation": "The highest single-task lifting index identifies the most demanding task to address first.",
     "choices": [
       "The task with the shortest name",
       "The task with the highest single-task lifting index",
@@ -1646,7 +1646,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "24",
-    "prompt": "Which index is defined in the course slides as job demand divided by operator capacity?",
+    "prompt": "Which index is defined as job demand divided by operator capacity?",
     "answer": "Job Severity Index",
     "explanation": "JSI compares the task demands with the relevant individual or population capacity.",
     "aliases": [
@@ -1659,9 +1659,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "24",
-    "prompt": "What critical JSI value is stated in this lecture PDF?",
+    "prompt": "What critical value is used for the Job Severity Index?",
     "answer": "1.5",
-    "explanation": "The course slide gives 1.5 as the critical value for its JSI approach.",
+    "explanation": "The critical JSI value is 1.5 for this assessment approach.",
     "choices": [
       "15",
       "1.5",
@@ -1677,7 +1677,7 @@ export const questions = [
     "pages": "24",
     "prompt": "The JSI and the NIOSH lifting index are identical names for the same computation.",
     "answer": "False",
-    "explanation": "The slides discuss distinct methods, with different capacity models and stated criteria."
+    "explanation": "JSI and LI use different capacity models and assessment criteria."
   },
   {
     "id": "analysis-028",
@@ -1685,9 +1685,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "24",
-    "prompt": "What method is named for determining worker capacity in the JSI approach?",
+    "prompt": "What method is used to determine worker capacity in the Job Severity Index approach?",
     "answer": "Psychophysical method",
-    "explanation": "The slide distinguishes capacity estimation from the job analysis used to establish demand.",
+    "explanation": "Psychophysical methods estimate acceptable lifting capacity; job analysis establishes the task demands.",
     "choices": [
       "Color vision screening",
       "Psychophysical method",
@@ -1701,7 +1701,7 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "25",
-    "prompt": "Which set of adjustments is listed when calculating lifting capacity for JSI?",
+    "prompt": "Which adjustments are applied when calculating lifting capacity for the Job Severity Index?",
     "answer": "Lifting frequency, box size, and population percentage",
     "explanation": "The procedure adjusts capacity for these job and population conditions.",
     "choices": [
@@ -1758,7 +1758,7 @@ export const questions = [
     "pages": "31",
     "prompt": "If MAWL plus body weight is 100 kg and body weight is 70 kg, what is MAWL?",
     "answer": "30 kg",
-    "explanation": "The slide’s relation is MAWL = MAWLBW − body weight: 100 − 70 = 30 kg.",
+    "explanation": "MAWL = MAWLBW − body weight: 100 − 70 = 30 kg.",
     "choices": [
       "30 kg",
       "170 kg",
@@ -1772,9 +1772,9 @@ export const questions = [
     "topic": "analysis",
     "source": "analysis",
     "pages": "52",
-    "prompt": "What does OWAS stand for in this course PDF?",
+    "prompt": "What does OWAS stand for?",
     "answer": "Ovako Working Posture Analysis System",
-    "explanation": "OWAS is the observation-based posture assessment method discussed near the end of the PDF.",
+    "explanation": "OWAS is an observation-based method for classifying working postures and prioritizing corrective action.",
     "aliases": [
       "Ovako Working Posture Analysing System",
       "Ovako Working Posture Analyzing System"
@@ -1804,7 +1804,7 @@ export const questions = [
     "pages": "54",
     "prompt": "Which sequence describes the components of the four-digit OWAS posture code?",
     "answer": "Back, arms, legs, load or force",
-    "explanation": "The coding slide groups these four aspects of posture and loading.",
+    "explanation": "The four digits represent back posture, arm posture, leg posture, and load or force.",
     "choices": [
       "Time, cost, profit, output",
       "Back, arms, legs, load or force",
@@ -1830,7 +1830,7 @@ export const questions = [
     "pages": "56",
     "prompt": "Which OWAS action category calls for corrective action as soon as possible?",
     "answer": "Category 3",
-    "explanation": "The slide distinguishes near-future action (2), action as soon as possible (3), and immediate action (4).",
+    "explanation": "Category 2 calls for action in the near future, category 3 as soon as possible, and category 4 immediately.",
     "choices": [
       "Category 3",
       "Category 2",
@@ -1846,7 +1846,7 @@ export const questions = [
     "pages": "56",
     "prompt": "Which OWAS action category requires immediate corrective action?",
     "answer": "Category 4",
-    "explanation": "The most urgent action category in the supplied classification is 4.",
+    "explanation": "Category 4 is the most urgent OWAS action category.",
     "choices": [
       "Category 1",
       "Category 3",
@@ -1870,7 +1870,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "4",
-    "prompt": "In the lecture’s hierarchy of ergonomics goals, what describes tolerable conditions?",
+    "prompt": "In the hierarchy of ergonomics goals, what describes tolerable conditions?",
     "answer": "Conditions without known dangers to life or health",
     "explanation": "Tolerability is the basic level in the hierarchy, before acceptability and optimal fit.",
     "choices": [
@@ -1886,7 +1886,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "4",
-    "prompt": "The lecture’s acceptable level includes conditions to which the people involved can voluntarily agree.",
+    "prompt": "Acceptable working conditions are conditions to which the people involved can voluntarily agree.",
     "answer": "True",
     "explanation": "Acceptability considers scientific knowledge and the social, technological, and organizational circumstances."
   },
@@ -1910,7 +1910,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "8",
-    "prompt": "A workstation repeatedly forces the wrists to bend sharply. Which listed principle most directly addresses this?",
+    "prompt": "A workstation repeatedly forces the wrists to bend sharply. Which ergonomic principle most directly addresses this?",
     "answer": "Work in neutral postures",
     "explanation": "The ten principles include neutral posture, manageable force, reach, clearance, and movement.",
     "choices": [
@@ -1928,7 +1928,7 @@ export const questions = [
     "pages": "10–11",
     "prompt": "The skeleton provides support, protection, and a lever system for movement.",
     "answer": "True",
-    "explanation": "The slides describe these roles along with blood-cell production in bone marrow."
+    "explanation": "The skeleton also supports blood-cell production in bone marrow."
   },
   {
     "id": "mechanics-006",
@@ -1936,9 +1936,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "11",
-    "prompt": "What term names the blood-cell formation function listed for the skeletal system?",
+    "prompt": "What term names the blood-cell formation function of the skeletal system?",
     "answer": "Hemopoiesis",
-    "explanation": "The skeletal-system slide identifies blood-cell production in marrow.",
+    "explanation": "Blood cells are produced in bone marrow through hemopoiesis.",
     "aliases": [
       "hematopoiesis",
       "haemopoiesis",
@@ -1969,7 +1969,7 @@ export const questions = [
     "pages": "16",
     "prompt": "What term describes the anteriorly convex curves of the cervical and lumbar spine?",
     "answer": "Lordosis",
-    "explanation": "The lecture identifies these lordotic curves as part of the spine’s normal curved arrangement.",
+    "explanation": "Cervical and lumbar lordotic curves form part of the spine’s normal curved arrangement.",
     "aliases": [
       "lordotic curves",
       "lordotic curvature"
@@ -1981,7 +1981,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "18",
-    "prompt": "The lecture describes the spine’s S-shape as helping it absorb mechanical shocks.",
+    "prompt": "The spine’s S-shape helps it absorb mechanical shocks.",
     "answer": "True",
     "explanation": "The curved structure is compared with a spring rather than a perfectly straight column."
   },
@@ -1991,7 +1991,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "24–25",
-    "prompt": "What explanation does the lecture give for daily changes in stature?",
+    "prompt": "What explains daily changes in stature?",
     "answer": "Intervertebral discs lose and regain fluid under changing loads",
     "explanation": "Changes in disc spacing contribute to changes in measured standing height.",
     "choices": [
@@ -2009,7 +2009,7 @@ export const questions = [
     "pages": "23",
     "prompt": "What term describes disc behavior that includes both elastic response and time-dependent deformation?",
     "answer": "Viscoelastic",
-    "explanation": "The lecture identifies the discs as viscoelastic structures.",
+    "explanation": "Intervertebral discs exhibit both elastic response and time-dependent deformation under load.",
     "aliases": [
       "viscoelasticity",
       "viscoelastic behavior",
@@ -2022,7 +2022,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "35",
-    "prompt": "Which exposure is specifically listed for priority ergonomic redesign?",
+    "prompt": "Which exposure is a risk factor that should be considered when prioritizing ergonomic redesign?",
     "answer": "Whole-body vibration",
     "explanation": "The risk list includes whole-body vibration along with demanding lifts and non-neutral trunk postures.",
     "choices": [
@@ -2050,7 +2050,7 @@ export const questions = [
     "pages": "45",
     "prompt": "What connective tissue attaches muscle to bone?",
     "answer": "Tendon",
-    "explanation": "The anatomy slides distinguish muscle-to-bone tendons from joint-binding ligaments.",
+    "explanation": "Tendons attach muscle to bone; ligaments bind joints and connect bones or cartilage.",
     "aliases": [
       "tendons"
     ]
@@ -2063,7 +2063,7 @@ export const questions = [
     "pages": "45",
     "prompt": "What fibrous structures bind joints and connect bones or cartilage?",
     "answer": "Ligaments",
-    "explanation": "The lecture describes ligaments as supporting connections around joints.",
+    "explanation": "Ligaments provide supporting connections around joints.",
     "aliases": [
       "ligament"
     ]
@@ -2074,9 +2074,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "48",
-    "prompt": "Which nerve passes through the carpal tunnel and is named in the lecture’s syndrome explanation?",
+    "prompt": "Which nerve passes through the carpal tunnel and can be compressed in carpal tunnel syndrome?",
     "answer": "Median nerve",
-    "explanation": "The slide describes compression of the median nerve within the wrist tunnel.",
+    "explanation": "Carpal tunnel syndrome involves compression of the median nerve within the wrist tunnel.",
     "choices": [
       "Optic nerve",
       "Auditory nerve",
@@ -2090,9 +2090,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "49",
-    "prompt": "Which syndrome in the slides involves compression of nerves and/or blood vessels between the shoulder and arm?",
+    "prompt": "Which syndrome involves compression of nerves and/or blood vessels between the shoulder and arm?",
     "answer": "Thoracic outlet syndrome",
-    "explanation": "The lecture describes the affected outlet region between the shoulder and arm.",
+    "explanation": "Thoracic outlet syndrome involves compression in the outlet region between the shoulder and arm.",
     "aliases": [
       "TOS"
     ]
@@ -2103,7 +2103,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "50",
-    "prompt": "Holding the neck in one position for a long period is associated with tension neck syndrome in the slides.",
+    "prompt": "Holding the neck in one position for a long period can contribute to tension neck syndrome.",
     "answer": "True",
     "explanation": "The example connects prolonged positioning with neck fatigue and stiffness."
   },
@@ -2131,7 +2131,7 @@ export const questions = [
     "pages": "53",
     "prompt": "More forceful exertions can increase loading on muscles, tendons, ligaments, and joints.",
     "answer": "True",
-    "explanation": "The lecture identifies exertion level as one of the contributors to tissue loading."
+    "explanation": "Greater exertion can increase the mechanical loading of these tissues."
   },
   {
     "id": "mechanics-021",
@@ -2141,7 +2141,7 @@ export const questions = [
     "pages": "58",
     "prompt": "Which change can reduce repetitive keyboard actions?",
     "answer": "Use suitable shortcuts to reduce necessary keystrokes",
-    "explanation": "The slide recommends reducing the number of repeated actions needed for the task.",
+    "explanation": "Shortcuts reduce the number of repeated keystrokes needed to complete a task.",
     "choices": [
       "Use suitable shortcuts to reduce necessary keystrokes",
       "Increase typing force",
@@ -2157,7 +2157,7 @@ export const questions = [
     "pages": "59",
     "prompt": "Short rest breaks can give tissues time to recover.",
     "answer": "True",
-    "explanation": "The lecture presents short recovery periods as part of managing repetitive work."
+    "explanation": "Short recovery periods help manage the demands of repetitive work."
   },
   {
     "id": "mechanics-023",
@@ -2165,9 +2165,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "61–62",
-    "prompt": "What emphasis is given in the slides comparing conventional and newer sitting approaches?",
+    "prompt": "Which approach helps reduce the problems associated with prolonged sitting?",
     "answer": "Provide movement and posture variation",
-    "explanation": "The comparison questions maintaining one exact posture throughout a task.",
+    "explanation": "Movement and posture changes help avoid remaining in one fixed position throughout a task.",
     "choices": [
       "Provide movement and posture variation",
       "Hold every joint at 90° for the entire day",
@@ -2181,9 +2181,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "65",
-    "prompt": "The lecture says that a wrist rest can never cause harm, regardless of its shape or use.",
+    "prompt": "A wrist rest can never cause harm, regardless of its shape or how it is used.",
     "answer": "False",
-    "explanation": "It warns about hardness, thickness, sharp edges, and continuous pressure."
+    "explanation": "Hardness, thickness, sharp edges, and continuous contact pressure can make a wrist rest unsuitable."
   },
   {
     "id": "mechanics-025",
@@ -2191,7 +2191,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "64",
-    "prompt": "Which mouse placement is favored by the lecture’s workstation discussion?",
+    "prompt": "Which mouse placement helps reduce unnecessary reaching?",
     "answer": "Close to the keyboard and within comfortable reach",
     "explanation": "Keeping the pointing device near the keyboard can reduce unnecessary reaching.",
     "choices": [
@@ -2261,7 +2261,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "78",
-    "prompt": "Using only the lecture’s rough estimate HRmax = 220 − age, what value is obtained for age 30?",
+    "prompt": "Using the rough estimate HRmax = 220 − age, what value is obtained for age 30?",
     "answer": "190 beats/min",
     "explanation": "220 − 30 = 190. This is a classroom estimation exercise, not an individual medical or exercise prescription.",
     "choices": [
@@ -2277,9 +2277,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "83",
-    "prompt": "The lecture associates greater physical fitness with faster heart-rate recovery after a comparable exercise period.",
+    "prompt": "Greater physical fitness is generally associated with faster heart-rate recovery after a comparable exercise period.",
     "answer": "True",
-    "explanation": "The slide describes a quicker return toward resting heart rate, while individual assessment requires context."
+    "explanation": "A quicker return toward resting heart rate can reflect greater fitness, while individual assessment requires context."
   },
   {
     "id": "mechanics-032",
@@ -2287,7 +2287,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "80",
-    "prompt": "What is one stated purpose of the lecture’s step-test activity?",
+    "prompt": "What is one purpose of a step test in physiological workload assessment?",
     "answer": "Estimate cardiovascular fitness from the exercise response",
     "explanation": "The activity illustrates physiological workload assessment; it is not a diagnosis or a test to perform through this site.",
     "choices": [
@@ -2303,9 +2303,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "81",
-    "prompt": "In the supplied step-test protocol, what stepping rate is specified?",
+    "prompt": "For a nine-minute step test using one complete stepping cycle every 2.5 seconds, what is the stepping rate?",
     "answer": "24 times per minute",
-    "explanation": "This question recalls the course protocol only. The slide pairs it with a nine-minute activity.",
+    "explanation": "60 seconds ÷ 2.5 seconds per cycle = 24 cycles per minute.",
     "choices": [
       "240 times per minute",
       "One step every minute",
@@ -2319,7 +2319,7 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "81",
-    "prompt": "The course step-test instructions say to count heart rate for one full minute immediately after the test.",
+    "prompt": "After a nine-minute step test, heart rate is counted for one full minute immediately after exercise.",
     "answer": "True",
     "explanation": "The stated measurement period is one minute after the activity."
   },
@@ -2329,9 +2329,9 @@ export const questions = [
     "topic": "mechanics",
     "source": "mechanics",
     "pages": "84",
-    "prompt": "Which post-test heart-rate range is labeled category B in the lecture’s historical classification?",
+    "prompt": "In a historical step-test classification with category A at 120 beats/min or less and category C at 141 beats/min or more, which range defines category B?",
     "answer": "121–140 beats/min",
-    "explanation": "The slide labels B as 121–140. This is course recall, not a basis for personal work placement or medical judgment.",
+    "explanation": "Category B covers 121–140 beats/min in this historical classification. These categories are not a basis for personal work placement or medical judgment.",
     "choices": [
       "Only 60 beats/min",
       "120 beats/min or less",
@@ -2345,9 +2345,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "2",
-    "prompt": "Which grouping matches the lecture’s physical-environment categories?",
+    "prompt": "Which grouping represents three categories of the physical work environment?",
     "answer": "Thermal, audio, and visual",
-    "explanation": "The slide groups temperature and humidity, sound, and lighting or color.",
+    "explanation": "Thermal factors include temperature and humidity, audio factors include sound, and visual factors include lighting and color.",
     "choices": [
       "Financial, political, and legal only",
       "Chemical, accounting, and advertising",
@@ -2374,7 +2374,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "3",
-    "prompt": "Which response is associated with lower skin temperature and cold discomfort in the slides?",
+    "prompt": "Which physiological response can lower skin temperature and cause cold discomfort?",
     "answer": "Vasoconstriction",
     "explanation": "Narrowing of blood vessels is connected with reduced skin temperature in the thermal discussion.",
     "choices": [
@@ -2390,9 +2390,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "4",
-    "prompt": "Which instrument is listed for measuring air velocity?",
+    "prompt": "Which instrument measures air velocity?",
     "answer": "Anemometer",
-    "explanation": "The measurement slide distinguishes air-motion instruments from temperature instruments.",
+    "explanation": "Anemometers measure air movement; thermometers measure temperature.",
     "choices": [
       "Sound-level scale only",
       "Anemometer",
@@ -2408,7 +2408,7 @@ export const questions = [
     "pages": "6",
     "prompt": "What field concerns the production, transmission, and effects of sound?",
     "answer": "Acoustics",
-    "explanation": "The lecture defines acoustics as the science and technology of sound.",
+    "explanation": "Acoustics is the science and technology of sound.",
     "aliases": []
   },
   {
@@ -2417,7 +2417,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "9",
-    "prompt": "What term does the lecture use for unwanted, objectionable, or unacceptable sound?",
+    "prompt": "What term means unwanted, objectionable, or unacceptable sound?",
     "answer": "Noise",
     "explanation": "Whether a sound is unwanted depends partly on the listener and the task.",
     "aliases": []
@@ -2430,7 +2430,7 @@ export const questions = [
     "pages": "6",
     "prompt": "Acoustic design should consider speech communication and hearing protection, as well as annoyance.",
     "answer": "True",
-    "explanation": "The lecture’s acoustic goals include intelligible desired sound, reduced disruption, and prevention of hearing loss."
+    "explanation": "Acoustic design aims for intelligible desired sound, less disruption, and prevention of hearing loss."
   },
   {
     "id": "environment-008",
@@ -2438,9 +2438,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "8",
-    "prompt": "What sound level is paired with ordinary conversation in the lecture’s illustrative scale?",
+    "prompt": "Approximately what sound level is commonly associated with ordinary conversation?",
     "answer": "60 dBA",
-    "explanation": "The slide uses 60 dBA as a conversation example; actual levels depend on conditions.",
+    "explanation": "About 60 dBA is an illustrative conversation level; actual sound levels depend on conditions.",
     "choices": [
       "0 dBA",
       "60 dBA",
@@ -2456,7 +2456,7 @@ export const questions = [
     "pages": "9",
     "prompt": "Noise can interfere with desired sounds even when the main problem is not permanent hearing loss.",
     "answer": "True",
-    "explanation": "The lecture also discusses communication interference, stress, disturbed rest, and task effects."
+    "explanation": "Noise can disrupt communication, disturb rest, increase stress, and interfere with task performance."
   },
   {
     "id": "environment-010",
@@ -2479,7 +2479,7 @@ export const questions = [
     "pages": "12",
     "prompt": "Which concept describes light output in a particular direction?",
     "answer": "Luminous intensity",
-    "explanation": "The lecture distinguishes directional intensity from total luminous flux.",
+    "explanation": "Luminous intensity describes directional output; luminous flux describes total output.",
     "choices": [
       "Luminous intensity",
       "Noise dose",
@@ -2493,7 +2493,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "13–16",
-    "prompt": "Why does the lecture assess the visual environment?",
+    "prompt": "What are three purposes of assessing the visual work environment?",
     "answer": "Health and safety, visual performance, and aesthetics",
     "explanation": "The three purposes cover safe use, task visibility, and a pleasant environment.",
     "choices": [
@@ -2509,9 +2509,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "17",
-    "prompt": "The minimum illuminance stated by a guideline must always be the optimum value for a particular task.",
+    "prompt": "The minimum illuminance required by a guideline must always be the optimum value for a particular task.",
     "answer": "False",
-    "explanation": "The lecture explicitly distinguishes meeting a minimum from finding the most suitable lighting."
+    "explanation": "Meeting a minimum lighting requirement does not necessarily produce the most suitable conditions for a particular task."
   },
   {
     "id": "environment-014",
@@ -2519,9 +2519,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "17",
-    "prompt": "What distinguishes statutory lighting guidance in the lecture?",
+    "prompt": "What distinguishes statutory lighting requirements from recommendatory guidance?",
     "answer": "It includes legal requirements",
-    "explanation": "The slide contrasts statutory requirements with recommendatory examples of practice.",
+    "explanation": "Statutory requirements have legal force; recommendatory guidance offers examples of good practice.",
     "choices": [
       "It includes legal requirements",
       "It is always optional",
@@ -2535,9 +2535,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "18",
-    "prompt": "What general-office service illuminance is quoted in this course slide?",
+    "prompt": "In a historical general-office lighting recommendation, what mean service illuminance is specified?",
     "answer": "500 lux",
-    "explanation": "The historical slide states 500 lux mean service illuminance. It is not a claim about current legal requirements.",
+    "explanation": "The historical recommendation is 500 lux mean service illuminance. This is not a claim about current legal requirements.",
     "choices": [
       "500 lux",
       "500 decibels",
@@ -2551,7 +2551,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "19",
-    "prompt": "The slide’s task-area uniformity criterion uses minimum illuminance divided by average illuminance. What minimum ratio is quoted?",
+    "prompt": "For task-area lighting uniformity, what minimum ratio of minimum illuminance to average illuminance is recommended?",
     "answer": "0.8",
     "explanation": "The cited recommendation gives a minimum-to-average illuminance ratio of at least 0.8.",
     "choices": [
@@ -2577,9 +2577,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "26",
-    "prompt": "What temporal lighting problem does the checklist ask about in display screens and fluorescent tubes?",
+    "prompt": "What temporal lighting problem can occur in display screens and fluorescent tubes?",
     "answer": "Flicker",
-    "explanation": "The temporal-aspects slide asks whether visible flicker is present.",
+    "explanation": "Flicker is a variation of light over time that can become visible.",
     "aliases": []
   },
   {
@@ -2606,7 +2606,7 @@ export const questions = [
     "pages": "30",
     "prompt": "Lamp heat and maintenance needs can matter even though they are not visual effects.",
     "answer": "True",
-    "explanation": "The lecture includes non-visual consequences and upkeep in the lighting assessment."
+    "explanation": "Lighting assessment also considers maintenance and non-visual effects such as heat."
   },
   {
     "id": "environment-021",
@@ -2630,9 +2630,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "36",
-    "prompt": "In the lecture’s weighting procedure, what is selected when the sum of weights is less than −1?",
+    "prompt": "When selecting an illumination level from a category range, what is chosen if the sum of the age, reflectance, and accuracy weights is less than −1?",
     "answer": "The lowest value in the category range",
-    "explanation": "The slide selects the low value below −1, the high value above 2, and otherwise the middle value.",
+    "explanation": "A sum below −1 selects the low value; a sum above 2 selects the high value; otherwise the middle value is used.",
     "choices": [
       "Always the highest value",
       "Zero illumination",
@@ -2646,7 +2646,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "43",
-    "prompt": "When designing a bus cab for Chilean bus drivers, which population data does the lecture say are most relevant?",
+    "prompt": "When designing a bus cab for Chilean bus drivers, which population data are most relevant?",
     "answer": "Data representing Chilean bus drivers",
     "explanation": "The intended function and users determine which anthropometric population is appropriate.",
     "choices": [
@@ -2662,9 +2662,9 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "50",
-    "prompt": "What term in the variability discussion means the ability to be shaped by the environment during development?",
+    "prompt": "What term describes the ability to be shaped by the environment during development?",
     "answer": "Plasticity",
-    "explanation": "The lecture treats developmental environment as one contributor to human variability.",
+    "explanation": "The developmental environment can shape human characteristics through plasticity.",
     "aliases": [
       "developmental plasticity"
     ]
@@ -2703,7 +2703,7 @@ export const questions = [
     "pages": "57",
     "prompt": "Which type of anthropometric data is measured with subjects in static postures?",
     "answer": "Structural data",
-    "explanation": "The lecture distinguishes static structural dimensions from movement-based functional data.",
+    "explanation": "Structural dimensions are measured in static postures; functional dimensions account for movement.",
     "aliases": [
       "structural anthropometry",
       "static anthropometry",
@@ -2733,7 +2733,7 @@ export const questions = [
     "pages": "57",
     "prompt": "Which anthropometric data type includes body-segment mass and exerted forces?",
     "answer": "Newtonian data",
-    "explanation": "The lecture uses this label for information needed in mechanical analyses of the body.",
+    "explanation": "Body-segment mass and force data support mechanical analyses of the body.",
     "aliases": [
       "Newtonian anthropometric data",
       "Newtonian anthropometry"
@@ -2745,7 +2745,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "69",
-    "prompt": "Which three task demands are named in the lecture’s sitting analysis?",
+    "prompt": "Which three task demands should be considered when analyzing a sitting workstation?",
     "answer": "Seeing, reaching, and exerting forces",
     "explanation": "A seat must support the task, not merely match a body measurement in isolation.",
     "choices": [
@@ -2771,7 +2771,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "85",
-    "prompt": "Beyond bare hip breadth, what allowance does the seating slide explicitly recommend for seat width?",
+    "prompt": "Beyond bare hip breadth, what allowance should be included when determining seat width?",
     "answer": "Clothing and ease of movement",
     "explanation": "The usable seat must accommodate dressed users and normal motion.",
     "choices": [
@@ -2787,7 +2787,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "88",
-    "prompt": "What is the reference surface for sitting shoulder height in the lecture?",
+    "prompt": "What is the reference surface when measuring sitting shoulder height?",
     "answer": "The sitting surface",
     "explanation": "The dimension is measured vertically from the seat to the shoulder’s acromion.",
     "choices": [
@@ -2805,7 +2805,7 @@ export const questions = [
     "pages": "91",
     "prompt": "Which approach directly checks how a person and an actual seat fit together?",
     "answer": "Fitting trials",
-    "explanation": "The slide lists fitting trials alongside dimensional, biomechanical, observational, and subjective methods.",
+    "explanation": "Fitting trials complement dimensional, biomechanical, observational, and subjective assessment methods.",
     "choices": [
       "Reading the price label only",
       "Assuming all seats fit equally",
@@ -2819,7 +2819,7 @@ export const questions = [
     "topic": "environment",
     "source": "environment",
     "pages": "91",
-    "prompt": "The lecture lists both subjective judgments and measured dimensions as seating-assessment methods.",
+    "prompt": "Both subjective judgments and measured dimensions can be used to assess seating.",
     "answer": "True",
     "explanation": "Different methods capture different aspects of fit, comfort, and function."
   }

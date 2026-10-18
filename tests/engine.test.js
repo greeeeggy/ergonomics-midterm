@@ -11,6 +11,7 @@ test('all questions have distinct IDs and prompts, valid answer keys and in-scop
   for (const q of questions) {
     assert.ok(topics[q.topic] && sources[q.source]);
     assert.ok(q.prompt && q.answer && q.explanation && q.pages);
+    assert.doesNotMatch(q.prompt + ' ' + q.explanation, /\b(slides?|lectures?|chapters?|pdfs?|PowerPoint|Helander)\b/i, q.id);
     assert.ok(['mcq','tf','identification'].includes(q.type));
     assert.equal(isCorrect(q, q.answer), true);
     const pages = q.pages.split(/[,–]/).map(p => Number(p.trim()));

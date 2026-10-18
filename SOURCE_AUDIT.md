@@ -30,6 +30,7 @@ All six range boundaries were rendered for verification. Book question reference
 ## Content rules and exclusions
 
 - Answers and paraphrased explanations were authored from the supplied material. Source page fields in `bank.js` form the per-item evidence ledger. Calculation questions use explicitly supplied practice inputs and are identified as such; they do not invent observations.
+- Questions and explanations address concepts, calculations, and applications directly. Source names and page references appear separately as citations, without questions about what a slide, lecture, or chapter says.
 - The 200 prompts are distinct. The bank contains 99 multiple choice, 49 true/false, and 52 identification items, with all three types in every topic.
 - Helander’s refractive-error figure caption on printed p. 44 conflicts with the neighboring prose. Questions testing that conflicting image location were omitted.
 - Some accommodation numbers differ between book sections; no exact age-to-diopter recall question was built from those inconsistent figures.
