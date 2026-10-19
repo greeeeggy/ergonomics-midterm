@@ -38,17 +38,50 @@ function feedbackHTML(q, response) {
   return `<div class="feedback ${response.correct ? 'correct' : 'incorrect'}" role="status"><h3>${response.correct ? '✓ Correct. Nicely done.' : '✕ Not quite. Here’s the answer.'}</h3>${!response.correct ? `<p class="answer-line">Correct answer: ${escape(q.answer)}</p>` : ''}<p>${escape(q.explanation)}</p><p class="source-ref">${escape(sourceText(q))}</p></div>`;
 }
 
+function setStudyNav(reviewerActive = false) {
+  for (const id of ['home-nav', 'reviewer-nav']) {
+    const active = (id === 'reviewer-nav') === reviewerActive;
+    const button = document.getElementById(id);
+    button.classList.toggle('active', active);
+    if (active) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  }
+}
+
+let reviewerFilters = { topic: 'all', type: 'all' };
+function reviewer() {
+  setStudyNav(true);
+  main.innerHTML = `<div class="page-heading"><div><span class="eyebrow">READ AT YOUR OWN PACE</span><h1>Midterm reviewer</h1><p>The same practice questions, with every answer and explanation below.</p></div></div>
+  <section class="setup-card reviewer-filters" aria-label="Filter reviewer questions"><div class="field-row"><label class="field">Topic<select id="reviewer-topic"><option value="all">All topics</option>${Object.entries(topics).map(([id, t]) => `<option value="${id}">${escape(t.name)}</option>`).join('')}</select></label><label class="field">Question type<select id="reviewer-type"><option value="all">All question types</option>${Object.entries(labels).map(([id, name]) => `<option value="${id}">${name}</option>`).join('')}</select></label></div><p id="reviewer-count" class="status-note" role="status"></p></section>
+  <ol class="reviewer-list" id="reviewer-list" aria-label="Questions, answers, and explanations"></ol>`;
+  $('#reviewer-topic').value = reviewerFilters.topic;
+  $('#reviewer-type').value = reviewerFilters.type;
+  function renderList() {
+    reviewerFilters = { topic: $('#reviewer-topic').value, type: $('#reviewer-type').value };
+    const selected = questions.filter(q => (reviewerFilters.topic === 'all' || q.topic === reviewerFilters.topic) && (reviewerFilters.type === 'all' || q.type === reviewerFilters.type));
+    $('#reviewer-count').textContent = `${selected.length} of ${questions.length} questions · Answers shown below each question`;
+    $('#reviewer-list').innerHTML = selected.map(q => `<li class="reviewer-question" data-question-id="${escape(q.id)}"><div class="question-top"><span class="type-label">${labels[q.type]}</span><span class="question-topic">${escape(topics[q.topic].name)}</span></div><h2>${escape(q.prompt)}</h2>${q.type === 'mcq' ? `<ol class="reviewer-choices" type="A">${q.choices.map(choice => `<li>${escape(choice)}</li>`).join('')}</ol>` : ''}<ul class="reviewer-answer"><li><p class="right-answer"><strong>Answer: ${escape(q.answer)}</strong></p><p class="reviewer-explanation">${escape(q.explanation)}</p><p class="source-ref">${escape(sourceText(q))}</p></li></ul></li>`).join('');
+    if (!selected.length) $('#reviewer-list').innerHTML = '<li class="reviewer-empty">No questions match. Choose another topic or question type.</li>';
+  }
+  $('#reviewer-topic').addEventListener('change', renderList);
+  $('#reviewer-type').addEventListener('change', renderList);
+  renderList();
+}
+
 function home() {
+  setStudyNav();
   const answered = session ? Object.keys(session.responses).length : 0;
   main.innerHTML = `<div class="page-heading"><div><span class="eyebrow">A LITTLE PRACTICE. A CLEARER MIND.</span><h1>Your midterm, made manageable.</h1><p>One question at a time. Understand the why, then move forward.</p></div><span class="small-tag">MIDTERM REVIEW</span></div>
   ${session ? `<div class="resume-banner"><div><h3>${answered === session.ids.length ? 'Your last practice is ready to review.' : 'Pick up where you left off.'}</h3><p>${answered} of ${session.ids.length} answered · Saved on this browser</p></div><div class="session-actions"><button class="text-button" id="discard-session">Clear attempt</button><button class="primary" id="resume-session">${answered === session.ids.length ? 'View results' : 'Continue'} →</button></div></div>` : ''}
   ${!storageAvailable ? '<p class="warning-note">This browser cannot save progress. You can still practice; keep this tab open.</p>' : ''}
   <section class="hero" aria-labelledby="hero-title"><div><span class="eyebrow">DESIGNED AROUND YOU</span><h2 id="hero-title">Learn the concept.<br>Not just the correct letter.</h2><p>Practice from your assigned readings, with instant feedback and a short explanation for every answer.</p></div><div class="hero-graphic" aria-hidden="true"><div class="ring"></div><div class="ring second"></div><div class="ring third"></div><span class="person">⌁</span><span class="dot"></span><span class="annotation">HUMAN × SYSTEM</span></div></section>
+  <div class="resume-banner"><div><h3>Prefer reading through the answers?</h3><p>Browse the same questions as a numbered list, with answers and explanations.</p></div><button class="primary" id="open-reviewer">Open reviewer →</button></div>
   <div class="stats"><div class="stat"><span class="stat-symbol" aria-hidden="true">▤</span><div><strong>${questions.length}</strong><small>Source-based questions</small></div></div><div class="stat"><span class="stat-symbol" aria-hidden="true">◷</span><div><strong>3</strong><small>Ways to test yourself</small></div></div><div class="stat"><span class="stat-symbol" aria-hidden="true">◎</span><div><strong>${Object.keys(topics).length}</strong><small>Topics to work through</small></div></div></div>
   <div class="section-title"><h3>Make this session yours</h3><span>No timer. Just progress.</span></div>
   <div class="study-grid"><section class="setup-card" aria-labelledby="setup-title"><div class="card-heading"><span class="number-badge" aria-hidden="true">01</span><div><h3 id="setup-title">Set up your practice</h3><p>A quick warm-up or the whole reading list.</p></div></div>
   <form id="setup-form"><label class="field">What would you like to cover?<select id="topic-filter"><option value="all">All topics · Full midterm scope</option>${Object.entries(topics).map(([id, t]) => `<option value="${id}">${escape(t.name)}</option>`).join('')}</select></label><div class="field-row"><label class="field">Question type<select id="type-filter"><option value="all">Mix of all three</option>${Object.entries(labels).map(([id, name]) => `<option value="${id}">${name}</option>`).join('')}</select></label><label class="field">Session length<select id="count-filter"><option value="20">20 questions</option><option value="50">50 questions</option><option value="all">All matching questions</option></select></label></div><button class="start-button" id="start-practice" type="submit"><span>Start practice</span><span aria-hidden="true">→</span></button><p class="setup-foot" id="match-count" role="status"></p></form></section>
   <section class="coverage-card" aria-labelledby="coverage-title"><h3 id="coverage-title">On the reading list</h3><p>Your assigned scope, in six smaller pieces.</p>${Object.entries(topics).map(([id, t]) => `<button class="topic-row" data-topic="${id}" aria-label="Practice ${escape(t.name)}"><span class="topic-icon" aria-hidden="true">${t.icon}</span><span class="topic-info"><strong>${escape(t.name)}</strong><small>${escape(t.subtitle)}</small></span><span class="topic-count">${questions.filter(q => q.topic === id).length}</span></button>`).join('')}</section></div>`;
+  $('#open-reviewer').addEventListener('click', () => { reviewer(); focusHeading(); });
   $('#topic-filter').value = setup.topic;
   $('#type-filter').value = setup.type;
   $('#count-filter').value = setup.count;
@@ -89,6 +122,7 @@ function start(selected) {
 }
 
 function renderSession() {
+  setStudyNav();
   if (Object.keys(session.responses).length === session.ids.length && session.responses[session.ids.at(-1)]) return results();
   const q = byId.get(session.ids[session.index]);
   const response = session.responses[q.id];
@@ -143,6 +177,7 @@ function next() {
 }
 
 function results() {
+  setStudyNav();
   const answered = Object.values(session.responses).length;
   const score = Object.values(session.responses).filter(r => r.correct).length;
   const missed = session.ids.filter(id => !session.responses[id]?.correct);
@@ -160,6 +195,7 @@ function openSources() { $('#sources-dialog').showModal(); }
 $('#sources-nav').addEventListener('click', openSources);
 $('#sources-top').addEventListener('click', openSources);
 $('#close-sources').addEventListener('click', () => $('#sources-dialog').close());
+$('#reviewer-nav').addEventListener('click', () => { reviewer(); focusHeading(); });
 $('#home-nav').addEventListener('click', () => { home(); focusHeading(); });
 $('.brand').addEventListener('click', event => { event.preventDefault(); home(); focusHeading(); });
 $('#sources-dialog').addEventListener('click', event => { if (event.target === event.currentTarget) { const r = event.currentTarget.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) event.currentTarget.close(); } });
